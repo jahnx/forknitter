@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>For Knitter</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>For Knitter</h1>
+      <div class="gauge-calculator-container">
+        <h2>게이지 계산기</h2>
+        <div class="calculator-container">
+          <div class="top">
+            <div class="top-left">
+              <h3>도안 게이지</h3>
+              <div class="calc-table">
+                <table>
+                  <tr>
+                    <td>코</td>
+                    <td>
+                      <input type="text" id="pattern-gauge-stitch" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>단</td>
+                    <td>
+                      <input type="text" id="pattern-gauge-row" />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="top-right">
+              <div class="top-right-wrapper">
+                <h3>내 게이지</h3>
+                <div class="calc-table">
+                  <table>
+                    <tr>
+                      <td>코</td>
+                      <td>
+                        <input type="text" id="my-gauge-stitch" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>단</td>
+                      <td>
+                        <input type="text" id="my-gauge-row" />
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="bottom-left">
+              <h3>도안</h3>
+              <div class="calc-table">
+                <table>
+                  <tr>
+                    <td>코</td>
+                    <td>
+                      <input type="text" id="pattern-stitch" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>단</td>
+                    <td>
+                      <input type="text" id="pattern-row" />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="bottom-right">
+              <div class="bottom-right-wrapper" id="calculate-btn">
+                <button>계산하기</button>
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <div class="result-wrapper">
+              <h3>최종</h3>
+              <div class="calc-table calc-table-result">
+                <table>
+                  <tr>
+                    <td>코</td>
+                    <td id="result-stitch">결과값</td>
+                  </tr>
+                  <tr>
+                    <td>단</td>
+                    <td id="result-row">결과값</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="counters-container">
+        <h2>콧수 & 단수 카운터</h2>
+        <div class="counter-wrapper stitch">
+          <div class="counter-container">
+            <div class="counter-left">
+              <div class="top">
+                <h3>코</h3>
+                <div class="plus-gap">
+                  <div>
+                    <input
+                      type="radio"
+                      name="stitch-gap"
+                      id="stitch-gap-1"
+                      checked
+                    />
+                    <label for="stitch-gap-1">1 </label>
+                  </div>
+                  <div>
+                    <input type="radio" name="stitch-gap" id="stitch-gap-5" />
+                    <label for="stitch-gap-5">5</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="stitch-gap" id="stitch-gap-10" />
+                    <label for="stitch-gap-10">10</label>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <button class="styled-button" id="stitch-reset-btn">X</button>
+                <button class="styled-button" id="stitch-minus-btn">⇩</button>
+              </div>
+            </div>
+            <div class="counter-right">
+              <button class="current-value" id="stitch-current-value">0</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="counter-wrapper row">
+          <div class="counter-container">
+            <div class="counter-left">
+              <div class="top">
+                <h3>단</h3>
+                <div class="plus-gap">
+                  <div>
+                    <input type="radio" name="row-gap" id="row-gap-1" checked />
+                    <label for="row-gap-1">1</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="row-gap" id="row-gap-5" />
+                    <label for="row-gap-5">5</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="row-gap" id="row-gap-10" />
+                    <label for="row-gap-10">10</label>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <button class="styled-button" id="row-reset-btn">X</button>
+                <button class="styled-button" id="row-minus-btn">⇩</button>
+              </div>
+            </div>
+            <div class="counter-right">
+              <button class="current-value" id="row-current-value">0</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/stitch-counter.js"></script>
+    <script src="./js/row-counter.js"></script>
+  </body>
+</html>

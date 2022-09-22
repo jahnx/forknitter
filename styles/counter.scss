@@ -1,0 +1,82 @@
+.counters-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.08));
+  height: 80px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.counter-container {
+  display: flex;
+  height: 100%;
+}
+
+.counter-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px;
+  padding-right: 0;
+  width: 40%;
+
+  .top {
+    height: 30px;
+
+    h3 {
+      margin-bottom: 3px;
+    }
+  }
+
+  .plus-gap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.counter-right {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+
+  .current-value {
+    background-color: $gray0;
+    border-radius: 10px;
+    display: flex;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.08));
+    font-size: 50px;
+    font-weight: 900;
+    height: 80%;
+    justify-content: center;
+    padding-top: 7px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    width: 90%;
+
+    &:hover {
+      background-color: $gray5;
+      color: $gray0;
+    }
+  }
+}
+
+.styled-button {
+  background-color: $gray2;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 20px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  width: 25px;
+
+  &:hover {
+    background-color: $gray5;
+    color: $gray0;
+  }
+}
