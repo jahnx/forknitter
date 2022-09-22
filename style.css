@@ -163,6 +163,7 @@ ol {
   justify-content: center;
   width: 60%; }
   .counter-right .current-value {
+    align-items: center;
     background-color: #ced4da;
     border-radius: 10px;
     display: flex;
