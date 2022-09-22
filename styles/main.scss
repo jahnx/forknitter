@@ -6,12 +6,12 @@
 .main-container {
   background-color: $gray1;
   border-radius: 8px;
-  height: 568px;
-  padding: 5px 10px;
-  width: 320px;
   display: flex;
   flex-direction: column;
+  height: 568px;
   justify-content: space-between;
+  padding: 5px 10px;
+  width: 320px;
 
   h1 {
     font-style: italic;
