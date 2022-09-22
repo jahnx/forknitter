@@ -39,6 +39,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .counter-right {
@@ -73,7 +79,7 @@
   cursor: pointer;
   height: 20px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  width: 25px;
+  width: 48%;
 
   &:hover {
     background-color: $gray5;

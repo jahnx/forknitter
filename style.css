@@ -44,7 +44,7 @@ ol {
   list-style: none; }
 
 .gauge-calculator-container {
-  margin-bottom: 18px; }
+  margin-bottom: 10px; }
   .gauge-calculator-container h3 {
     font-weight: 500;
     text-decoration: underline; }
@@ -151,6 +151,10 @@ ol {
   .counter-left .plus-gap {
     display: flex;
     justify-content: space-between; }
+  .counter-left .bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; }
 
 .counter-right {
   align-items: center;
@@ -179,7 +183,7 @@ ol {
   cursor: pointer;
   height: 20px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  width: 25px; }
+  width: 48%; }
   .styled-button:hover {
     background-color: #adb5bd;
     color: #f8f9fa; }
@@ -189,16 +193,18 @@ ol {
   border-radius: 8px;
   height: 568px;
   padding: 5px 10px;
-  width: 320px; }
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .main-container h1 {
     font-style: italic;
     font-weight: 900;
     margin: 3px 0;
-    margin-bottom: 12px;
     text-decoration: underline; }
   .main-container h2 {
     font-size: 20px;
-    margin-bottom: 4px; }
+    margin-bottom: 5px; }
   .main-container h3 {
     font-size: 16px; }
 
